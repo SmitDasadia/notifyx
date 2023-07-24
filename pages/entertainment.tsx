@@ -1,41 +1,33 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import React,{useState} from "react";
 import axios from "axios";
-
-const inter = Inter({ subsets: ["latin"] });
-
-
-
+import Tabs from "@/components/Tabs";
+import NewsData from "@/components/NewsData";
 import Head from 'next/head'
-import HomePage from "@/src/HomePage";
 
-interface HomeProps {
+interface entertainmentProps {
   newsData: any;
 }
 
-const Home: React.FC<HomeProps> = ({ newsData }) => {
+const entertainment: React.FC<entertainmentProps> = ({ newsData }) => {
 
   
 
   return (
-    <div className={`p-5 `}>
+    <div className={`p-5`}>
        <Head>
-        <title>NotifyX </title>
+        <title>NotifyX - Entertainment</title>
       </Head>
-
-      <HomePage newsData={newsData}/>
       
-     
+      <NewsData newsData={newsData} />
     </div>
   );
 };
 
-export default Home;
-
+export default entertainment;
 
 export async function getServerSideProps() {
   const API_KEY = process.env.NEXT_PUBLIC_NewsApi_Key;
-  const API_ENDPOINT = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
+  const API_ENDPOINT = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}&category=entertainment&pageSize=100`;
 
   
 
