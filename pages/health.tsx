@@ -10,7 +10,7 @@ interface  healthProps {
 
 const health: React.FC< healthProps> = ({ newsData }) => {
   return (
-    <div className={`p-5 `}>
+    <div className={`p-3`}>
       <Head>
         <title>NotifyX - Health</title>
       </Head>

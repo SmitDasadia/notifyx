@@ -13,7 +13,7 @@ const science: React.FC<scienceProps> = ({ newsData }) => {
   
 
   return (
-    <div className={`p-5 `}>
+    <div className={`p-3`}>
       <Head>
         <title>NotifyX - Science</title>
       </Head>

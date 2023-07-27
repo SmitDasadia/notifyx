@@ -14,7 +14,7 @@ const general: React.FC<GeneralProps> = ({ newsData }) => {
   
 
   return (
-    <div className={`p-5 `}>
+    <div className={`p-3 `}>
       
       <NewsData newsData={newsData} />
     </div>

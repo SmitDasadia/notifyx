@@ -13,7 +13,7 @@ const sports: React.FC<sportsProps> = ({ newsData }) => {
   
 
   return (
-    <div className={`p-5 `}>
+    <div className={`p-3 `}>
       <Head>
         <title>NotifyX - Sports</title>
       </Head>
