@@ -28,7 +28,7 @@ const DarkModeToggle = () => {
 
   return (
     <button
-      className=" right-4 p-2 dark:bg-dark-bg dark:text-dark-text"
+      className=" right-4 p-2  dark:text-dark-text"
       onClick={handleToggle}
     >
       {isDarkMode ? <FiSun size={24} /> : <FiMoon size={24} />}

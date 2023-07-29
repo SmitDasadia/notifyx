@@ -1,4 +1,5 @@
 import DarkModeSwitch from "@/components/DarkModeSwitch";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Tabs from "@/components/Tabs";
 import "@/styles/globals.css";
@@ -11,6 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Header />
       <Tabs/>
       <Component {...pageProps} />
+      <Footer/>
     </>
   );
 }

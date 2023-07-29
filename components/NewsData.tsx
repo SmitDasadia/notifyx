@@ -18,7 +18,7 @@ const NewsData: React.FC<NewsDataProps> = ({ newsData }) => {
   return (
     <>
       {newsData ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3  pb-10">
           {newsData.articles.map((article: any, index: number) => (
             <div
               key={index}

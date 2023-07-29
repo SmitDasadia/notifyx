@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
-import DarkModeToggle from "./DarkModeSwitch";
 
 const categories = [
   "Headlines",
@@ -48,7 +46,7 @@ const Tabs = () => {
           )}
         </button>
       ))}
-      <DarkModeToggle/>
+      
     </div>
   );
 };
