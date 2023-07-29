@@ -14,7 +14,7 @@ const general: React.FC<GeneralProps> = ({ newsData }) => {
   
 
   return (
-    <div className={`p-3 `}>
+    <div className={`p-3 dark:bg-dark-bg dark:text-dark-text`}>
       
       <NewsData newsData={newsData} />
     </div>

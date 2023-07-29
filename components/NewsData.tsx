@@ -18,11 +18,11 @@ const NewsData: React.FC<NewsDataProps> = ({ newsData }) => {
   return (
     <>
       {newsData ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
           {newsData.articles.map((article: any, index: number) => (
             <div
               key={index}
-              className={`  rounded-md shadow-sm p-2 transition-colors duration-300 ease-in-out sm:shadow-md `}
+              className={`  rounded-md shadow-sm p-2 transition-colors duration-300 ease-in-out sm:shadow-md  `}
             >
               <div className="flex flex-row sm:flex-col">
                 <img

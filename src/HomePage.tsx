@@ -13,7 +13,7 @@ const HomePage: React.FC<HomeProps> = ({ newsData }) => {
   
 
   return (
-    <div className={`p-3`}>
+    <div className={`p-3 dark:bg-dark-bg dark:text-dark-text`}>
        <Head>
         <title>NotifyX </title>
       </Head>
