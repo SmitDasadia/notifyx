@@ -1,5 +1,6 @@
 import React from "react";
 import DarkMode from "./Darkmode";
+import SelectCountry from "./SelectCountry";
 
 interface SettingsDialogBoxProps {
   onClose: () => void;
@@ -12,26 +13,36 @@ const SettingsDialogBox: React.FC<SettingsDialogBoxProps> = ({ onClose }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md">
       <div className="bg-white dark:bg-gray-800 w-full max-w-md mx-4 p-6 rounded-lg shadow-lg">
-        <h2 className={`text-2xl font-bold mb-4 ${darkMode ? "dark:text-white" : ""}`}>
-        Update Your Settings
+        <h2
+          className={`text-2xl font-bold mb-4 ${
+            darkMode ? "dark:text-white" : ""
+          }`}
+        >
+          Update Your Settings
         </h2>
-        <h2 className={`text-sm font-semibold mb-2 ${darkMode ? "dark:text-white" : ""}`}>Make Your Experience Unique - Personalize and Save Your Preferences!</h2>
-
-        
+        <h2
+          className={`text-sm font-semibold mb-2 ${
+            darkMode ? "dark:text-white" : ""
+          }`}
+        >
+          Make Your Experience Unique - Personalize and Save Your Preferences!
+        </h2>
 
         <div className="flex items-center justify-between pt-10">
           <span className={`text-lg ${darkMode ? "dark:text-white" : ""}`}>
             Theme
-            
           </span>
-          <DarkMode/>
+          <DarkMode />
         </div>
 
-        
+        <div className="flex items-center justify-between pt-10">
+          <span className={`text-lg ${darkMode ? "dark:text-white" : ""}`}>
+            Country
+          </span>
+         <SelectCountry/>
+        </div>
 
         <hr className="border-gray-300 dark:border-gray-700 my-4 pb-10" />
-
-        
 
         <div className="flex justify-end">
           <button

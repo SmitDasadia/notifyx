@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
+import Loader from "./Loader";
 
 interface NewsDataProps {
   newsData: any;
@@ -62,7 +63,7 @@ const NewsData: React.FC<NewsDataProps> = ({ newsData }) => {
           ))}
         </div>
       ) : (
-        <p className="flex justify-center items-center">Loading...</p>
+        <Loader/>
       )}
     </>
   );
